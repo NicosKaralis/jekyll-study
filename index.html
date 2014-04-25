@@ -4,7 +4,7 @@ title: Latest Posts
 description: "A simple and clean responsive Jekyll theme for words and photos."
 tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 image:
-  feature: feature-image-filename.jpg
+  feature: feature-image-homepage.jpg
 ---
 
 <ul class="post-list">
@@ -19,6 +19,9 @@ image:
           </time>
         </span>
       </a>
+      <span class="sub-tags">
+        [ {{ post.category }} ] {{ post.tags | join: "&nbsp;&bull;&nbsp;" }}
+      </span>
     </article>
   </li>
 {% endfor %}
